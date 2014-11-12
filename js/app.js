@@ -1,21 +1,30 @@
 var presApp = angular.module('presApp', ['ngRoute']);
 
 
-presApp.config(['$routeProvider', function ($routeProvider) {
+presApp.config(function ($routeProvider) {
+
+  var tmplOrder =[
+    'partials/valueprop.html',
+    'partials/nfb.html',
+    'partials/market.html',
+    'partials/5forces.html',
+    'partials/lean.html',
+    'partials/valueprop.html'
+  ];
 
   $routeProvider
-    .when('/slide', {
-      templateUrl: '/partials/valueprop.html'
+    .when('/contents', {
+      templateUrl:  'partials/contents.html'
     })
-
-    .when('/slide2', {
-      tempateUrl:  '/partials/nfb.html'
-    })
-    .when('/', {
-      tempateUrl:  '/partials/contents.html'
+    .when('/slide/:id', {
+      templateUrl: function (paramObj) {
+        var index = paramObj.id - 1;
+        if (typeof tmplOrder[index] == undefined) return '/contents';
+        return tmplOrder[index]
+      }
     })
     .otherwise({
-      redirectTo: '/slide'
+      redirectTo: '/contents'
     })
 
-}])
+})

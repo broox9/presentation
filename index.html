@@ -3,21 +3,25 @@
 <head>
     <title>Presentation</title>
 
-    <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css/normalize.css" />
+    <link rel='stylesheet' type="text/css" href="css/main.css" />
+    <link rel='stylesheet' type="text/css" href="css/slides.css" />
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
 </head>
 <body ng-app="presApp">
 
   <div id="app-content">
-      <h1>Presentation</h1>
-      <div ng-view></div>
+  		<div id="overlayBox"></div>
+      <div id="slideBox" ng-view></div>
+      <footer>
+      	<a href="#/">TOC</a>
   </div>
 
 </body>
 
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-route/angular-route.min.js"></script>
 
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controllers.js"></script>

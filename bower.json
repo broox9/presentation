@@ -1,0 +1,11 @@
+{
+  "name": "Brookes_Presentation",
+  "version": "0.2.0",
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "font-awesome": "~4.2.0",
+    "jquery": "~2.1.1",
+    "angular-route": "~1.3.2",
+    "angular-ui-router": "~0.2.11"
+  }
+}
