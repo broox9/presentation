@@ -56,3 +56,86 @@
     display: block;
     margin-bottom: 0.25em;
 }
+
+
+/* 5 Forces */
+#competitive-forces {
+
+    background-color: purple;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#competitive-forces .main-force {
+    position: relative;
+    height: 25%;
+    max-width: 30%;
+    margin: 0 auto;
+    padding: 1em ;
+    border-radius: 50px;
+    text-align: left;
+}
+
+#competitive-forces .force {
+    position: absolute;
+    max-width: 80%;
+    height: 80%;
+    padding: 1em;
+    border-radius: 30px;
+}
+
+#competitive-forces #substitutes.force {
+    right: -100%;
+    bottom: -105%;
+}
+
+#competitive-forces #buyer.force {
+    right: -100%;
+    top: -105%;
+}
+
+#competitive-forces #entrants.force {
+    left: -100%;
+    top: -105%;
+}
+
+#competitive-forces #supplier.force {
+    left: -100%;
+    bottom: -105%;
+}
+
+
+
+/* STORY BOARD */
+#storyboard {
+
+}
+
+#storyboard #cell-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: pink;
+    overflow: auto;
+}
+
+#storyboard #cell-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#storyboard .cell {
+    height: 50%;
+    width: 33%;
+    display: inline-block;
+    background: grey;
+    vertical-align: middle;
+}
+#storyboard .cell img {
+    width: 50%;
+    vertical-align: middle;
+}

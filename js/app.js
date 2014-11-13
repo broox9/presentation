@@ -6,10 +6,10 @@ presApp.config(function ($routeProvider) {
   var tmplOrder =[
     'partials/valueprop.html',
     'partials/nfb.html',
-    'partials/market.html',
+    'partials/targetmarket.html',
     'partials/5forces.html',
     'partials/lean.html',
-    'partials/valueprop.html'
+    'partials/storyboard.html'
   ];
 
   $routeProvider
@@ -23,8 +23,6 @@ presApp.config(function ($routeProvider) {
         return tmplOrder[index]
       }
     })
-    .otherwise({
-      redirectTo: '/contents'
-    })
+    .otherwise({redirectTo: '/contents'});
 
 })
