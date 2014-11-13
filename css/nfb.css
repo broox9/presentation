@@ -1,0 +1,5 @@
+#nfb .third {
+    display: table-cell;
+    width: 32%;
+    border-right:1px solid green;
+}

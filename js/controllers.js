@@ -30,7 +30,7 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
         break;
       case 38:
       case 40:
-        $scope.$broadcast('changeCell', {keycode: $event.keyCode})
+        $scope.$broadcast('changeCell', $event.keyCode)
         break;
 
       default:
@@ -39,9 +39,39 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
 
 }]);
 
-appControllers.controller('StoryboardCtrl', ['$scope', function ($scope) {
+appControllers.controller('StoryboardCtrl', function ($scope) {
 
-  $scope.$on('changeCell', function (e, args) {
-    console.log("args", args)
+  window.brx = container = document.querySelector('#cell-container') ;
+  var cells = container.querySelectorAll('.cell') ;
+  console.log("el", container);
+  console.log("cells", cells.length)
+  var currentIndex = 0;
+  var nextIndex = function() {
+    var index = currentIndex + 1;
+    if (cells[index]) {
+      return index;
+    }
+    return 0;
+  }
+  var prevIndex = function() {
+    var index = currentIndex - 1;
+    if (currentIndex > 0) {
+      return index;
+    }
+    return 0;
+  }
+
+  $scope.$on('changeCell', function (e, keycode) {
+    console.log("keycode", keycode, currentIndex)
+    var newIndex;
+    if (keycode === 40) {
+      newIndex = nextIndex()
+    } else if (keycode === 38) {
+      newIndex = prevIndex()
+    }
+
+    cells[newIndex].scrollIntoView(false)
+    currentIndex = newIndex;
+
   })
-}])
+})

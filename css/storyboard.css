@@ -1,0 +1,29 @@
+/* STORY BOARD */
+#storyboard {
+    position: relative;
+}
+
+#storyboard #cell-wrapper {
+    position: relative;
+    /*display:block;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*border: 3px solid orange;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+}
+
+#storyboard #cell-container {
+    position: relative;
+    border:3px solid black;
+}
+
+#storyboard .cell {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+#storyboard .cell img {
+    width: 50%;
+    vertical-align: middle;
+}
