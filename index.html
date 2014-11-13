@@ -9,9 +9,9 @@
 
     <script src="lib/jquery/dist/jquery.min.js"></script>
 </head>
-<body ng-app="presApp">
+<body ng-app="presApp" ng-controller="SlideBoxCtrl" ng-keydown="keyCommand($event)">
 
-  <div id="app-content">
+  <div id="app-content" >
   		<div id="overlayBox"></div>
       <div id="slideBox" ng-view></div>
       <footer>

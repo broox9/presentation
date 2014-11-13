@@ -1,4 +1,4 @@
-var presApp = angular.module('presApp', ['ngRoute']);
+var presApp = angular.module('presApp', ['ngRoute', 'appControllers']);
 
 
 presApp.config(function ($routeProvider) {
@@ -21,7 +21,8 @@ presApp.config(function ($routeProvider) {
         var index = paramObj.id - 1;
         if (typeof tmplOrder[index] == undefined) return '/contents';
         return tmplOrder[index]
-      }
+      },
+      controller: 'SlideBoxCtrl'
     })
     .otherwise({redirectTo: '/contents'});
 
