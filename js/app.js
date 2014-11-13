@@ -18,11 +18,14 @@ presApp.config(function ($routeProvider) {
     })
     .when('/slide/:id', {
       templateUrl: function (paramObj) {
-        var index = paramObj.id - 1;
-        if (typeof tmplOrder[index] == undefined) return '/contents';
+        var index = parseInt(paramObj.id, 10) - 1;
+        console.log(index, tmplOrder[index])
+        if (!tmplOrder[index]) {
+          return 'partials/contents.html';
+        }
         return tmplOrder[index]
       },
-      controller: 'SlideBoxCtrl'
+      controller: 'MainCtrl'
     })
     .otherwise({redirectTo: '/contents'});
 
