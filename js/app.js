@@ -17,7 +17,7 @@ presApp.config(function ($routeProvider) {
     .when('/slide/:id', {
       templateUrl: function (paramObj) {
         var index = parseInt(paramObj.id, 10) - 1;
-        console.log(index, tmplOrder[index])
+
         if (!tmplOrder[index]) {
           return 'partials/contents.html';
         }

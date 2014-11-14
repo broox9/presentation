@@ -15,3 +15,22 @@
     max-width: 80%;
 }
 
+
+#contents #instructions {
+    max-width: 60%;
+}
+
+#contents #instructions ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0.25em;
+    list-style: none;
+    background-color: rgba(220,220,220,0.20);
+}
+
+#contents #instructions ul li {
+  display: inline-block;
+  padding: 1em 0.5em;
+  margin: 0.0625em;
+  background-color: rgba(220,220,220,0.25);
+}

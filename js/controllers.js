@@ -17,8 +17,15 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
     $('footer').toggleClass('show')
   };
 
+  $scope.resetPresentation = function () {
+    $route.updateParams({id: 1});
+  };
+
   $scope.keyCommand = function ($event) {
     switch ($event.keyCode) {
+      case 27:
+        $scope.resetPresentation();
+        break;
       case 84:
         $scope.toggleMenu();
         break;
