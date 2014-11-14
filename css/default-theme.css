@@ -64,8 +64,8 @@ footer {
 
 
 /* VALUE PROP */
-#value-prop {
-
+#value-prop .icon .fa-stack-1x {
+    color: #C0CA33;
 }
 
 
@@ -90,7 +90,45 @@ footer {
 #target-market {
     background-image: url('../img/usa.png');
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
+
+
+#target-market .fa-stack-1x {
+    color: #FF9800;
+}
+
+#target-market a {
+    color: #FFB74D
+}
+
+#target-market h3 {
+    color: #F48FB1
+}
+
+#target-market em {
+    font-family: "Georgia", "Helvetica", serif;
+    font-size: 1.25em;
+    color: greenyellow;
+}
+#target-market .panel {
+    background-color: rgba(220,220,220,0.15);
+    border-radius: 10px;
+}
+
+
+#target-market .panel.result .panel-right em {
+    color: #64B5F6;
+    font-weight: bold;
+}
+
+#target-market .panel.result .panel-right i {
+    color: greenyellow;
+    font-size: 1.5em;
+    width: 1.5em;
+}
+
+
 
 
 

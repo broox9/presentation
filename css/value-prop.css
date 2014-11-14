@@ -1,6 +1,7 @@
-#value-prop {
-
+#value-prop  .icon {
+    text-align: center;
 }
+
 
 #value-prop .text-wrapper {
     display: table-cell;

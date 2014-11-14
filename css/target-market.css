@@ -1,13 +1,50 @@
 #target-market {
     display: block;
+    padding: 2em 0;
 }
 
-target-market .panel {
-    display: table-row;
-    text-align: center;
+#target-market h1 {
+    padding-left: 1.5em;
+}
+
+#target-market .panel {
+    display: table;
     vertical-align: middle;
-    border: 1px solid orange;
-    height: 50%;
+    max-height: 30%;
+    width: 90%;
+    padding: 1em 0;
+    margin: 1em auto;
+}
+
+#target-market .panel .panel-left,
+#target-market .panel .panel-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#target-market .panel .panel-right {
+    vertical-align: middle;
+    padding: 0 0 0 1em;
+}
+
+#target-market .panel .panel-left {
+    width: 9em;
+}
+
+#target-market .panel p {
+    padding: 0;
+    margin: 0 1em 1.5em 0;
+}
+
+
+#target-market .panel h3 {
+    padding: 0;
+    margin: 0 0 0.75em 0;
+}
+
+#target-market .result .panel-right {
+    font-size: 1.3em;
+    line-height: 1.5em;
 }
 
 
