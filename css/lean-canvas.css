@@ -26,10 +26,6 @@
     vertical-align: middle;
 }
 
-#lean-canvas table tr.title td  h1 {
-    font-size: 2em;
-}
-
 #lean-canvas table p {
     padding: 0.5em;
     max-width: 80%;

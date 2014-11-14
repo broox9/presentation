@@ -38,7 +38,6 @@
     width: 50%;
     vertical-align: middle;
     padding: 1em;
-    border-right: 1px solid rgba(0,172,193, 0.7);
 }
 
 #storyboard .cell img {
@@ -58,5 +57,4 @@
 
 #storyboard .cell p strong {
     font-family: "Courier New", "Courier", "Georgia", serif;
-    color: #3F51B5;
 }

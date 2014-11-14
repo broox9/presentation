@@ -26,17 +26,40 @@ footer {
 }
 
 .shine {
-    background: linear-gradient(305deg, transparent 20%, rgba(220,220,220,0.25) 50%, transparent 51%);
+    background: linear-gradient(315deg, transparent 20%, rgba(220,220,220,0.08) 50%, transparent 51%);
 }
 
 
 .shade {
-    background: radial-gradient(transparent 80%, rgba(80,80,80,0.25) 100%);
+    background: radial-gradient(transparent 65%, rgba(80,80,80,0.25) 90%);
 }
 
 .glow {
     background: radial-gradient(rgba(255,255,255,0.15) 30%, transparent 70%);
 }
+
+/* =  SLide BG Colors ----------------------------------- */
+.cyan {
+    background-color: #00BCD4;
+}
+
+.gray50 {
+    background-color: #FAFAFA;
+}
+
+.purple {
+    background-color: #3F51B5;
+}
+
+.magenta {
+    background-color: #AD1457;
+}
+
+.lime {
+    background-color: #C0CA33;
+}
+
+/* - ----------------------------------- */
 
 
 
@@ -65,26 +88,31 @@ footer {
 
 /* TARGET MARKET */
 #target-market {
-    background-color: #CDDC39;
+    background-image: url('../img/usa.png');
+    background-repeat: no-repeat;
 }
 
 
 
 /* STORYBOARD */
 #storyboard {
-    background-color: #00BCD4;
+    color: #fff;
 }
 
 #storyboard .cell .image-wrapper {
-    background-color: #00ACC1;
+    /*background-color: #00ACC1;*/
+    background-color: rgba(100,100,100, 0.25);
+    border-right: 1px solid rgba(90,90,90, 0.2);
 }
+
+#storyboard .cell p strong {
+    color: #fff;
+}
+
 
 
 
 /* LEAN */
-#lean-canvas {
-    background-color: #efefef;
-}
 #lean-canvas table {
     border-width: 0;
 }
@@ -134,10 +162,10 @@ footer {
     background-color: #00ACC1;
 }
 
-#nfb h3 {
+#nfb h2 {
     background-color: #0097A7;
 }
 
-#nfb h4 {
+#nfb h3 {
     color: #673AB7;
 }

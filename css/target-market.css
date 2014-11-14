@@ -1,0 +1,13 @@
+#target-market {
+    display: block;
+}
+
+target-market .panel {
+    display: table-row;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid orange;
+    height: 50%;
+}
+
+
