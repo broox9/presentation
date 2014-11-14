@@ -4,8 +4,9 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    border: 1px solid #aaa;
+    border-style: solid;
     font-size:  0.75em;
+    line-height: 1em;
 }
 
 #lean-canvas table td {
@@ -16,29 +17,30 @@
 
 #lean-canvas table td h4 {
     padding: 0.25em;
+    line-height: 1.25;
+}
+
+#lean-canvas table tr.title td  {
+    padding: unset;
+    padding-left: 1em;
+    vertical-align: middle;
+}
+
+#lean-canvas table tr.title td  h1 {
+    font-size: 2em;
 }
 
 #lean-canvas table p {
     padding: 0.5em;
     max-width: 80%;
     border-radius: 4px;
-    margin: 0.75em auto;
+    margin: 0.5em auto;
     box-shadow: 0 3px 2px #bbb;
 }
 
-#lean-canvas p.business {
-    background-color: yellow;
-}
-
-#lean-canvas p.church {
-    background-color: greenyellow;
-}
-
-#lean-canvas p.member {
-    background-color: steelblue;
-}
 
 #lean-canvas p strong {
     display: block;
     margin-bottom: 0.25em;
+    line-height: 1.25;
 }

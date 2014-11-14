@@ -1,6 +1,6 @@
 .slide {
 	display: table;
-		table-layout: fixed;
+    /*table-layout: fixed;*/
 	height: 100%;
 	width: 100%;
 }

@@ -1,0 +1,30 @@
+#value-prop {
+
+}
+
+#value-prop .text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+#value-prop .big-text {
+     margin:  -3em auto 0;
+     max-width: 80%;
+    /*background-color: rgba(100,100,100, 0.5);*/
+    text-align: left;
+}
+
+#value-prop .big-text h1 {
+    font-size: 2.5em;
+    line-height: 2em;
+
+}
+
+
+#value-prop .big-text p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+
+}

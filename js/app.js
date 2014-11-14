@@ -4,6 +4,7 @@ var presApp = angular.module('presApp', ['ngRoute', 'appControllers']);
 presApp.config(function ($routeProvider) {
 
   var tmplOrder =[
+    'partials/contents.html',
     'partials/valueprop.html',
     'partials/nfb.html',
     'partials/targetmarket.html',
@@ -13,9 +14,6 @@ presApp.config(function ($routeProvider) {
   ];
 
   $routeProvider
-    .when('/contents', {
-      templateUrl:  'partials/contents.html'
-    })
     .when('/slide/:id', {
       templateUrl: function (paramObj) {
         var index = parseInt(paramObj.id, 10) - 1;
@@ -27,6 +25,6 @@ presApp.config(function ($routeProvider) {
       },
       controller: 'MainCtrl'
     })
-    .otherwise({redirectTo: '/contents'});
+    .otherwise({redirectTo: '/slide/1'});
 
 })

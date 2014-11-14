@@ -1,45 +1,61 @@
 /* 5 Forces */
 #competitive-forces {
-    display: table-cell;
     height: 100%;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#competitive-forces h1 {
+    height: 5%;
+    display: table-row;
+
+}
+
+#competitive-forces #force-box {
+    height: 90%;
+    width: 50%;
+
+    display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 
 #competitive-forces .main-force {
-    position: relative;
-    height: 25%;
-    max-width: 30%;
-    margin: 0 auto;
-    padding: 1em ;
-    border-radius: 50px;
-    text-align: left;
+    display:table-cell;
+    height: 28%;
+    width: 25%;
+    margin: 0;
+    text-align: center;
+    z-index: 2;
 }
 
 #competitive-forces .force {
-    position: absolute;
-    max-width: 80%;
-    height: 80%;
+    /*position: absolute;*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    height: 25%;
     padding: 1em;
-    border-radius: 30px;
+    z-index: 1;
 }
 
-#competitive-forces #substitutes.force {
-    right: -100%;
-    bottom: -105%;
-}
+/*#competitive-forces #substitutes.force {*/
+    /*right: 10%;*/
+    /*bottom: 10%;*/
+/*}*/
 
-#competitive-forces #buyer.force {
-    right: -100%;
-    top: -105%;
-}
+/*#competitive-forces #buyer.force {*/
+    /*right: 10%;*/
+    /*top: 10%;*/
+/*}*/
 
-#competitive-forces #entrants.force {
-    left: -100%;
-    top: -105%;
-}
+/*#competitive-forces #entrants.force {*/
+    /*left: 10%;*/
+    /*top: 10%;*/
+/*}*/
 
-#competitive-forces #supplier.force {
-    left: -100%;
-    bottom: -105%;
-}
+/*#competitive-forces #supplier.force {*/
+    /*left: 10%;*/
+    /*bottom: 10%;*/
+/*}*/

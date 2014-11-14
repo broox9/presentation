@@ -70,7 +70,7 @@ appControllers.controller('StoryboardCtrl', function ($scope) {
       newIndex = prevIndex()
     }
 
-    cells[newIndex].scrollIntoView(false)
+    cells[newIndex].scrollIntoView(true)
     currentIndex = newIndex;
 
   })

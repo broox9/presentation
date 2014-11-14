@@ -1,0 +1,143 @@
+html, body {
+    color: #fff;
+    background-color: #4CAF50;
+    font-family: Calibri, Helvetica, Arial
+}
+
+h1, h2, h3, h4, h5 {
+    color: #fff;
+    font-family: "Courier New", "Courier", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+a {
+    color: #E8F5E9;
+    text-decoration: none;
+}
+
+footer {
+    border-top: 1px solid rgba(165,165,165, 0.6);
+    background-color: rgba(65,65,65, 0.4);
+}
+
+#artwork {
+    background: linear-gradient(315deg, transparent 20%, rgba(220,220,220,0.3) 50%, transparent 51%);
+    opacity: 0.3;
+    z-index:0;
+}
+
+.shine {
+    background: linear-gradient(305deg, transparent 20%, rgba(220,220,220,0.25) 50%, transparent 51%);
+}
+
+
+.shade {
+    background: radial-gradient(transparent 80%, rgba(80,80,80,0.25) 100%);
+}
+
+.glow {
+    background: radial-gradient(rgba(255,255,255,0.15) 30%, transparent 70%);
+}
+
+
+
+/* VALUE PROP */
+#value-prop {
+
+}
+
+
+/* 5 FORCES */
+#competitive-forces {
+    background-color: #D1C4E9;
+}
+
+#competitive-forces .force  {
+    background-color: #26C6DA;
+}
+
+#competitive-forces .main-force  {
+    background-color: #7E57C2;
+}
+
+
+
+
+
+/* TARGET MARKET */
+#target-market {
+    background-color: #CDDC39;
+}
+
+
+
+/* STORYBOARD */
+#storyboard {
+    background-color: #00BCD4;
+}
+
+#storyboard .cell .image-wrapper {
+    background-color: #00ACC1;
+}
+
+
+
+/* LEAN */
+#lean-canvas {
+    background-color: #efefef;
+}
+#lean-canvas table {
+    border-width: 0;
+}
+
+#lean-canvas td {
+    border: 2px solid #BDBDBD;
+    border-top-color: transparent;
+}
+
+#lean-canvas p.business {
+    background-color: #66BB6A;
+    color: #424242;
+}
+
+#lean-canvas p.church {
+    background-color: #FFC107;
+    color: #424242;
+}
+
+#lean-canvas p.member {
+    background-color: #FFEB3B;
+    color: #424242;
+}
+
+#lean-canvas h1 {
+    color: #1B5E20;
+}
+
+#lean-canvas h3 {
+    color: #727272;
+}
+
+
+
+
+
+/* NFB */
+#nfb {
+    background-color: #00BCD4;
+}
+
+#nfb .third {
+    border-right:1px solid #80DEEA;
+}
+
+#nfb .third:nth-child(2) {
+    background-color: #00ACC1;
+}
+
+#nfb h3 {
+    background-color: #0097A7;
+}
+
+#nfb h4 {
+    color: #673AB7;
+}

@@ -1,5 +1,17 @@
 #nfb .third {
     display: table-cell;
     width: 32%;
-    border-right:1px solid green;
+    padding: 0;
+    font-size: 0.875em;
 }
+
+#nfb h3 {
+    margin: 0;
+    padding: 1em;
+}
+
+#nfb h4 {
+    margin: 0.5em 1em;
+    padding: 0;
+}
+
