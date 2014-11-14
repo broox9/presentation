@@ -38,6 +38,11 @@ footer {
     background: radial-gradient(rgba(255,255,255,0.15) 30%, transparent 70%);
 }
 
+.noise {
+    background-image: url('../img/noise.png');
+    background-repeat: repeat;
+}
+
 /* =  SLide BG Colors ----------------------------------- */
 .cyan {
     background-color: #00BCD4;
@@ -59,6 +64,18 @@ footer {
     background-color: #C0CA33;
 }
 
+.pale-pink {
+    background-color: #D1C4E9;
+}
+
+.orange {
+    background-color: #FFA726;
+}
+
+.blue-grey {
+    background-color: #607D8B;
+}
+
 /* - ----------------------------------- */
 
 
@@ -70,16 +87,36 @@ footer {
 
 
 /* 5 FORCES */
-#competitive-forces {
-    background-color: #D1C4E9;
-}
-
-#competitive-forces .force  {
-    background-color: #26C6DA;
+#competitive-forces  {
+    color: #fafafa;
 }
 
 #competitive-forces .main-force  {
     background-color: #7E57C2;
+}
+
+#competitive-forces h1 {
+    color: #424242;
+}
+
+#competitive-forces h4 {
+    /*background-color: rgba(90,90,90, 0.5);*/
+    background-color: #FB8C00;
+}
+
+
+#competitive-forces #entrants,
+#competitive-forces #buyer {
+    background-color: #FFA726;
+}
+
+#competitive-forces #rivalries,
+#competitive-forces #substitutes {
+    background-color: #FFA726;
+}
+
+#competitive-forces #supplier {
+    background-color: #FFA726;
 }
 
 
@@ -176,7 +213,7 @@ footer {
 }
 
 #lean-canvas h1 {
-    color: #1B5E20;
+    color: #424242;
 }
 
 #lean-canvas h3 {
