@@ -6,11 +6,13 @@ presApp.config(function ($routeProvider) {
   var tmplOrder =[
     'partials/contents.html',
     'partials/valueprop.html',
+    'partials/storyboard.html',
     'partials/nfb.html',
     'partials/targetmarket.html',
     'partials/5forces.html',
     'partials/lean.html',
-    'partials/storyboard.html'
+    'partials/layout.html',
+    'partials/roadmap.html'
   ];
 
   $routeProvider

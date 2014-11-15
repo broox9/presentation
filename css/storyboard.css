@@ -34,6 +34,15 @@
     margin: 0 0 2em 0;
 }
 
+#storyboard.layout .cell .image-wrapper {
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
 #storyboard .cell .image-wrapper {
     display: table-cell;
     width: 50%;
@@ -44,6 +53,13 @@
 #storyboard .cell img {
     max-width: 100%;
     vertical-align: middle;
+}
+
+#storyboard .cell img.gloImg {
+    max-width: 80%;
+    vertical-align: middle;
+    text-align: center;
+    border: 0.875em solid rgba(220,220,220, 0.6) ;
 }
 
 #storyboard .cell p {
@@ -58,4 +74,10 @@
 
 #storyboard .cell p strong {
     /*font-family: "Georgia", "palatino", "palatino linotype" serif;*/
+}
+
+#storyboard #arrow-guide {
+    position: fixed;
+    bottom: 0.25em;
+    left: 0.5em;
 }

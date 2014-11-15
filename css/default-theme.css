@@ -226,10 +226,11 @@ footer {
 
 /* NFB */
 #nfb {
-    background-color: #00BCD4;
+    /*background-color: #00BCD4;*/
 }
 
-#nfb .third {
+#nfb .third,
+#nfb .fouth {
     border-right:1px solid #80DEEA;
 }
 
@@ -239,6 +240,10 @@ footer {
 
 #nfb h2 {
     background-color: #0097A7;
+}
+
+#nfb .fourth h2 {
+    background-color: rgba(90,90,90,0.35);
 }
 
 #nfb h3 {
