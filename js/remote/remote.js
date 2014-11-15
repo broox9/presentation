@@ -1,4 +1,4 @@
-var remoteApp = angular.module('remoteApp', ['firebase']);
+var remoteApp = angular.module('remoteApp', ['firebase', 'ngTouch']);
 
 
 remoteApp.controller('RemoteCtrl', ['$scope', '$firebase', function($scope, $firebase) {

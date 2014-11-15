@@ -16,7 +16,11 @@
 </head>
 <body ng-app="remoteApp" ng-controller="RemoteCtrl" >
 
-    <div id="next-button" ng-click="commander('prev')">
+<div id="next-button" ng-swipe-left="commander('prev')" ng-swipe-right="commander('next')" >
+    Swiper
+</div>
+
+<div id="next-button" ng-click="commander('prev')">
         PREVIOUS
     </div>
 
@@ -40,11 +44,15 @@
         TOGGLE
     </div>
 
+    <div id="full-button" ng-click="commander('space')">
+        FULLSCREEN
+    </div>
+
 
 </body>
 
 <script src="lib/angular/angular.min.js"></script>
-<!--<script src="lib/angular-touch/angular-touch.min.js"></script>-->
+<script src="lib/angular-touch/angular-touch.min.js"></script>
 <!--<script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>-->
 <script src="lib/firebase/firebase.js"></script>
 <script type="text/javascript" src="lib/angularfire/dist/angularfire.min.js"></script>

@@ -4,10 +4,7 @@ var appControllers = angular.module('appControllers',[])
 
 appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', function ($scope,  $route, $routeParams) {
 
-  console.log("i'm the main controller")
   var ref = new Firebase('https://brookespresi.firebaseio.com/');
-//  var sync = $firebase(ref)
-  var last_timestamp = 0;
 
 
   ref.child('currentCommand').remove();
@@ -41,6 +38,9 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
         ref.off('child_added')
         $scope.toggleMenu();
         break;
+      case "space":
+        $scope.toggleFullScreen();
+        break;
       default:
     }
 
@@ -69,7 +69,15 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
     $route.reload();
   };
 
+  $scope.toggleFullScreen = function () {
+    console.log("space bar")
+    var app = document.querySelector('#app-content')
+    console.log("App",app)
+    app.webkitRequestFullscreen()
+  };
+
   $scope.keyCommand = function ($event) {
+    console.log("keyCode", $event.keyCode)
     switch ($event.keyCode) {
       case 27:
         $scope.resetPresentation();
@@ -87,7 +95,8 @@ appControllers.controller('MainCtrl', ['$scope','$route','$routeParams', functio
       case 40:
         $scope.$broadcast('changeCell', $event.keyCode)
         break;
-
+      case 32:
+        $scope.toggleFullScreen();
       default:
     }
   }
