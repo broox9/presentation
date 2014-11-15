@@ -12,7 +12,8 @@ presApp.config(function ($routeProvider) {
     'partials/5forces.html',
     'partials/lean.html',
     'partials/layout.html',
-    'partials/roadmap.html'
+    'partials/roadmap.html',
+    'partials/buddy.html'
   ];
 
   $routeProvider
