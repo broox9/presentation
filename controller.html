@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controller</title>
+
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css" />
+    <link rel='stylesheet' type="text/css" href="css/main.css" />
+    <link rel='stylesheet' type="text/css" href="css/default-theme.css" />
+    <link rel='stylesheet' type="text/css" href="css/remote.css" />
+
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body ng-app="remoteApp" ng-controller="RemoteCtrl" >
+
+    <div id="next-button" ng-click="commander('prev')">
+        PREVIOUS
+    </div>
+
+    <div id="prev-button" ng-click="commander('next')">
+        NEXT
+    </div>
+
+    <div id="up-button" ng-click="commander('up')">
+        UP
+    </div>
+
+    <div id="down-button" ng-click="commander('down')">
+        DOWN
+    </div>
+
+    <div id="reset-button" ng-click="commander('esc')">
+        RESET
+    </div>
+
+    <div id="toggle-button" ng-click="commander('t')">
+        TOGGLE
+    </div>
+
+
+</body>
+
+<script src="lib/angular/angular.min.js"></script>
+<!--<script src="lib/angular-touch/angular-touch.min.js"></script>-->
+<!--<script src="https://cdn.firebase.com/js/client/2.0.3/firebase.js"></script>-->
+<script src="lib/firebase/firebase.js"></script>
+<script type="text/javascript" src="lib/angularfire/dist/angularfire.min.js"></script>
+<!--<script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>-->
+<!--<script src="https://cdn.firebase.com/libs/angularfire/0.8.2/angularfire.min.js"></script>-->
+
+
+<script type="text/javascript" src="js/remote/remote.js"></script>
+</html>

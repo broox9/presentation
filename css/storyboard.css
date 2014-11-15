@@ -7,8 +7,9 @@
 }
 
 #storyboard h1 {
-    /*padding: 1em;*/
-    display: none;
+    position: fixed;
+    top: 1em;
+    left: 2em;
 }
 
 #storyboard #cell-wrapper {
@@ -56,5 +57,5 @@
 }
 
 #storyboard .cell p strong {
-    font-family: "Courier New", "Courier", "Georgia", serif;
+    /*font-family: "Georgia", "palatino", "palatino linotype" serif;*/
 }

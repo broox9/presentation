@@ -1,4 +1,4 @@
-var presApp = angular.module('presApp', ['ngRoute', 'appControllers']);
+var presApp = angular.module('presApp', ['ngRoute', 'firebase', 'appControllers']);
 
 
 presApp.config(function ($routeProvider) {

@@ -1,0 +1,13 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body > div {
+    display: block;
+    margin: 1em;
+    padding: 1.5em;
+    text-align: center;
+    background-color: rgba(220,220,220, 0.4);
+    border-radius: 10px;
+}
